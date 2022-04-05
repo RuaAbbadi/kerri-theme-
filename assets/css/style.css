@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+   --primary: #e65f78;
+}
+.transition-5{
+    transition: all 0.5s;
+}
+.text-custom{
+    color:var(--primary);
+}
+.btn-custom{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-custom:hover{
+    background-color: #d8576f;
+    border-color: #d8576f;
+}
+
+/* start of navbar */
+.nav-link.active{
+    color:var(--primary)!important;
+}
+.nav-link:hover  {
+   color:var(--primary)!important;
+}
+/* end  of navbar */
+
+/* start of header */
+.home {
+    background-image: url('../img/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.home::after{
+    content:'';
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom:0;
+    top:0;
+    background-color: rgba(0,0 , 0, 0.7);
+}
+.home .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.home .content .home-btn:hover {
+    background-color: white;
+    color:black !important;
+}
+
+.home h2{
+    height:30px;
+    width: 100% !important;;
+    margin: auto;
+}
+.home h2::after{
+    content:"";
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    animation: typing 10s infinite alternate;
+}
+.scroll-down{
+    width:30px;
+    height:50px;
+    display: block;
+    margin: auto;
+}
+.scroll-down span{
+    width:2px;
+    height:10px;
+    background-color: white;
+    display: inline-block;
+    margin: 18px auto;
+    animation: translateY 1s infinite alternate;
+}
+@keyframes translateY {
+    0%{
+       transform: translateY(10px);
+    }
+
+    100%{
+       transform: translateY(-10px);
+    }
+}
+@keyframes typing {
+    0% {
+        content: "K|";
+    }
+
+    1% {
+        content: "Ke|";
+    }
+
+    2% {
+        content: "Ker|";
+    }
+
+    3% {
+        content: "Kerr.|";
+    }
+
+    4% {
+        content: "Kerri|";
+    }
+
+    5% {
+        content: "Kerri |";
+    }
+
+    6% {
+        content: "Kerri D|";
+    }
+
+    7% {
+        content: "Kerri De|";
+    }
+
+    8% {
+        content: "Kerri Deo|";
+    }
+
+    9% {
+        content: "Kerri Deo.|";
+    }
+
+    10% {
+        content: "Kerri Deo.|";
+    }
+
+    11% {
+        content: "Kerri Deo.|";
+    }
+
+    12% {
+        content: "Kerri Deo|";
+    }
+
+    14% {
+        content: "Kerri De|";
+    }
+
+    15% {
+        content: "Kerri D|";
+    }
+
+    16% {
+        content: "Kerri |";
+    }
+
+    17% {
+        content: "Kerri |";
+    }
+
+    18% {
+        content: "Kerri |";
+    }
+
+    19% {
+        content: "Kerri|";
+    }
+
+    20% {
+        content: "Kerr|";
+    }
+
+    21% {
+        content: "Ker|";
+    }
+
+    22% {
+        content: "Ke|";
+    }
+
+    23% {
+        content: "K|";
+    }
+
+    24% {
+        content: "|";
+    }
+
+    25% {
+        content: "A|";
+    }
+
+
+    26% {
+        content: "A P|";
+    }
+
+    27% {
+        content: "A Ph|";
+    }
+
+    28% {
+        content: "A Pho|";
+    }
+
+    29% {
+        content: "A Phot|";
+    }
+
+    30% {
+        content: "A Photo|";
+    }
+
+    31% {
+        content: "A Photog|";
+    }
+
+    32% {
+        content: "A Photogr|";
+    }
+
+    33% {
+        content: "A Photogra|";
+    }
+
+    34% {
+        content: "A Photograp|";
+    }
+
+    35% {
+        content: "A Photograph|";
+    }
+
+    36% {
+        content: "A Photographe|";
+    }
+
+    37% {
+        content: "A Photographer|";
+    }
+
+    37% {
+        content: "A Photographer.|";
+    }
+
+    38% {
+        content: "A Photographer.|";
+    }
+
+    39% {
+        content: "A Photographer.|";
+    }
+
+    40% {
+        content: "A Photographer.|";
+    }
+
+   
+
+    41% {
+        content: "A Photographer|";
+    }
+
+    42% {
+        content: "A Photographe|";
+    }
+
+    43% {
+        content: "A Photograph|";
+    }
+
+    44% {
+        content: "A Photograp|";
+    }
+
+    45% {
+        content: "A Photogra|";
+    }
+
+    46% {
+        content: "A Photogr|";
+    }
+
+    47% {
+        content: "A Photo|";
+    }
+
+    48% {
+        content: "A Phot|";
+    }
+
+    49% {
+        content: "A Pho|";
+    }
+
+    50% {
+        content: "A Ph|";
+    }
+
+    51% {
+        content: "A P|";
+    }
+
+    52% {
+        content: "A |";
+    }
+
+    53% {
+        content: "A G|";
+    }
+
+    54% {
+        content: "A Gr|";
+    }
+
+    55% {
+        content: "A Gra|";
+    }
+
+    56% {
+        content: "A Grap|";
+    }
+
+    57% {
+        content: "A Graph|";
+    }
+
+    58% {
+        content: "A Graphi|";
+    }
+
+    59% {
+        content: "A Graphic|";
+    }
+
+    60% {
+        content: "A Graphic |";
+    }
+
+    61% {
+        content: "A Graphic D|";
+    }
+
+    62% {
+        content: "A Graphic De|";
+    }
+
+    63% {
+        content: "A Graphic Des|";
+    }
+
+    64% {
+        content: "A Graphic Desi|";
+    }
+
+    65% {
+        content: "A Graphic Desig|";
+    }
+
+    66% {
+        content: "A Graphic Design|";
+    }
+
+    67% {
+        content: "A Graphic Designe|";
+    }
+
+    68% {
+        content: "A Graphic Designer|";
+    }
+
+    69% {
+        content: "A Graphic Designer.|";
+    }
+
+    70% {
+        content: "A Graphic Designer.|";
+    }
+    71% {
+        content: "A Graphic Designer.|";
+    }
+    72% {
+        content: "A Graphic Designer.|";
+    }
+    73% {
+        content: "A Graphic Designer|";
+    }
+
+    74% {
+        content: "A Graphic Designe|";
+    }
+
+    75% {
+        content: "A Graphic Design|";
+    }
+
+    76% {
+        content: "A Graphic Desig|";
+    }
+
+    77% {
+        content: "A Graphic Desi|";
+    }
+
+    78% {
+        content: "A Graphic Des|";
+    }
+
+    79% {
+        content: "A Graphic De|";
+    }
+
+    80% {
+        content: "A Graphic D|";
+    }
+
+    81% {
+        content: "A Graphic |";
+    }
+
+    82% {
+        content: "A Graphic|";
+    }
+
+    83% {
+        content: "A Graphi|";
+    }
+
+    84% {
+        content: "A Graph|";
+    }
+
+    85% {
+        content: "A Grap|";
+    }
+
+    86% {
+        content: "A Gra|";
+    }
+
+    87% {
+        content: "A Gr|";
+    }
+
+    88% {
+        content: "A G|";
+    }
+
+    89% {
+        content: "A |";
+    }
+
+    90% {
+        content: "A|";
+    }
+
+    91% {
+        content: "|";
+    }
+
+    92% {
+        content: "K|";
+    }
+
+    93% {
+        content: "Ke|";
+    }
+
+    94% {
+        content: "Ker|";
+    }
+
+    95% {
+        content: "Kerr|";
+    }
+
+    96% {
+        content: "Kerri|";
+    }
+
+    97% {
+        content: "Kerri.|";
+    }
+
+    98% {
+        content: "Kerri.|";
+    }
+
+    99% {
+        content: "Kerri.|";
+    }
+
+    100% {
+        content: "Kerri.|";
+    }
+}
+/* end of header */
+
+/* start of about */
+.about li{
+    width:45px;
+    height:45px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.about i{
+    font-size: 17px;
+}
+.about a{
+    color:black;
+}
+.about li:hover a{
+    color :var(--primary);
+}
+/* end of about */
+
+/* start of services */
+.services .services-box  span{
+    display: block;
+    width:45px;
+    height:3px;
+    margin:auto;
+    background-color: #e65f78;
+}
+.services .services-box  p{
+    width:87%;
+    margin: auto;
+}
+.services .services-box {
+    cursor: pointer;
+}
+.services .services-box:hover span {
+    width:60px;
+}
+/* end of services */
+
+/* start of client  */
+.client-img{
+    width: fit-content;
+    margin: auto;
+    border: 2px solid rgba(96, 98, 97, 0.333);
+}
+.client-box p {
+    width:60%;
+    margin: auto;
+    margin: 20px auto;
+}
+.carousel-indicators{
+    bottom:-20px;
+}
+.carousel-indicators [data-bs-target]{
+    width:20px;
+    height:6px;
+    background-color:var(--primary);
+    border-radius: 30px;
+    border:none;
+    transition: all 0.6s;
+}
+.carousel-indicators .active{
+    width:30px;
+}
+/* end of client  */
+
+/* start of work */
+.work p {
+    width:40%;
+    margin: auto;
+}
+.work ul .nav-link:hover{
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: #fff!important;
+    background-color:var(--primary);
+    border:none;
+}
+.work ul .nav-link:hover a{
+    color:#fff !important;
+    background-color:var(--primary);
+    border-radius: 5px;
+    border:none;
+}
+.work .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0 , 0, 0.7);
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(30%);
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.work .item{
+    cursor: pointer;
+    margin-top:20px;
+}
+.work .item:hover .overlay{
+    opacity: 1;
+    transform: translateY(0);
+}
+.work .item img{
+    height: 100%;
+    object-fit: cover;
+}
+.nav-link{
+     color: black;
+}
+.nav-pills .nav-link.active {
+    color: #fff!important;
+    background-color:var(--primary);
+    border-radius: 5px;
+    border:none;
+}
+/* end of work */
+
+/* start of blog */
+
+.form-control:focus{
+    border-color: #e65f78;
+    box-shadow: none;
+}
+footer li {
+    width:40px; 
+    height:40px;
+    border-radius: 40px;
+    line-height: 40px; 
+    background-color:  #ababab;
+}
+footer li:hover a{
+    color: var(--primary)!important;
+}
+/* end of blog */
+
+
