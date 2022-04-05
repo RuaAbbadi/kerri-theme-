@@ -56,11 +56,13 @@
     background-color: white;
     color:black !important;
 }
-
 .home h2{
     height:30px;
-    width: 100% !important;;
+}
+.home p {
+    width:75%;
     margin: auto;
+    padding-top: 50px ;
 }
 .home h2::after{
     content:"";
@@ -68,7 +70,7 @@
     top:50%;
     left:50%;
     transform: translate(-50%,50%);
-    animation: typing 10s infinite alternate;
+    animation: typing 10s infinite ;
 }
 .scroll-down{
     width:30px;
