@@ -57,20 +57,19 @@
     color:black !important;
 }
 .home h2{
-    height:30px;
+    height: 40px;
+}
+.home h2::after{
+    content: "";
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    animation: typing 10s infinite;
 }
 .home p {
     width:75%;
     margin: auto;
-    padding-top: 50px ;
-}
-.home h2::after{
-    content:"";
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,50%);
-    animation: typing 10s infinite ;
 }
 .scroll-down{
     width:30px;
