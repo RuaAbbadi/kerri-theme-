@@ -19,6 +19,10 @@
     background-color: #d8576f;
     border-color: #d8576f;
 }
+.w-40{
+    width:40%;
+    margin:auto;
+}
 
 /* start of navbar */
 .nav-link.active{
@@ -58,6 +62,8 @@
 }
 .home h2{
     height:80px;
+    font-size:38px;
+    font-weight: 700;
 }
 .home h2::after{
     content: "";
@@ -65,7 +71,7 @@
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    animation: typing 10s infinite;
+    animation: typing 10s infinite ;
 }
 .home p {
     width:75%;
@@ -503,10 +509,10 @@
 
 /* start of about */
 .about li{
-    width:45px;
-    height:45px;
+    width:40px;
+    height:40px;
     text-align: center;
-    line-height: 40px;
+    line-height: 35px;
     cursor: pointer;
 }
 .about i{
@@ -568,9 +574,8 @@
 /* end of client  */
 
 /* start of work */
-.work p {
-    width:40%;
-    margin: auto;
+.nav-item .nav-link{
+    margin-left: 20px;
 }
 .work ul .nav-link:hover{
     background-color: var(--primary);
