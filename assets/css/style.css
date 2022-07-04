@@ -71,7 +71,7 @@
     top:50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    animation: typing 10s infinite ;
+    animation: typing 15s infinite alternate ;
 }
 .home p {
     width:75%;
